@@ -1,0 +1,51 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": ["entities", "relationships"],
+  "properties": {
+    "entities": {
+      "type": "array",
+      "description": "List of entities in the knowledge graph",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "description"],
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Unique identifier for the entity"
+          },
+          "name": {
+            "type": "string",
+            "description": "Display name of the entity"
+          },
+          "description": {
+            "type": "string",
+            "description": "Detailed description of the entity"
+          }
+        }
+      }
+    },
+    "relationships": {
+      "type": "array",
+      "description": "List of relationships between entities",
+      "items": {
+        "type": "object",
+        "required": ["source", "target", "name"],
+        "properties": {
+          "source": {
+            "type": "string",
+            "description": "ID of the source entity"
+          },
+          "target": {
+            "type": "string",
+            "description": "ID of the target entity"
+          },
+          "name": {
+            "type": "string",
+            "description": "Name of the relationship"
+          }
+        }
+      }
+    }
+  }
+}

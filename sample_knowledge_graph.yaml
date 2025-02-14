@@ -1,0 +1,21 @@
+entities:
+  - id: "python"
+    name: "Python"
+    description: "A high-level programming language known for its simplicity"
+  - id: "java"
+    name: "Java"
+    description: "A class-based, object-oriented programming language"
+  - id: "javascript"
+    name: "JavaScript"
+    description: "A dynamic programming language for web development"
+
+relationships:
+  - source: "python"
+    target: "java"
+    name: "is newer than"
+  - source: "python"
+    target: "java"
+    name: "is more dynamic than"
+  - source: "javascript"
+    target: "python"
+    name: "shares dynamic typing with"
