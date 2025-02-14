@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Animated Brain SVG</title>
+    <style>
+        #svg-container {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .background-svg {
+            width: 100%;
+            height: 100%;
+        }
+        .overlay-svg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+        #ready-indicator {
+            visibility: hidden;
+        }
+        #sfg {
+            fill: #ff0000;
+            stroke: #f80000;
+            stroke-opacity: 1;
+            opacity: 0;
+            animation: fadeIn 5s ease-in forwards 2s;
+        }
+        #sfg-text {
+            opacity: 0;
+            animation: appear 0.1s ease-in forwards 7s;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 0.5; }
+        }
+        @keyframes appear {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div id="ready-indicator">Ready</div>
+    <div id="svg-container">
+        <img src="brain.svg" class="background-svg" />
+        <svg class="overlay-svg" viewBox="0 0 361.24442 206.02223">
+            <defs>
+                <filter id="filter5025">
+                    <feGaussianBlur stdDeviation="0.13229167"/>
+                </filter>
+            </defs>
+            <path
+               style="filter:url(#filter5025)"
+               id="sfg"
+               sodipodi:type="arc"
+               sodipodi:cx="25.645584"
+               sodipodi:cy="52.750046"
+               sodipodi:rx="40.408779"
+               sodipodi:ry="4.7500296"
+               d="m 66.054363,52.750046 a 40.408779,4.7500296 0 0 1 -40.408779,4.75003 40.408779,4.7500296 0 0 1 -40.408779,-4.75003 40.408779,4.7500296 0 0 1 40.408779,-4.75003 40.408779,4.7500296 0 0 1 40.408779,4.75003 z" />
+            <text
+               xml:space="preserve"
+               style="font-size:4.9389px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;white-space:pre;inline-size:65.6366;stroke-width:0.264583"
+               x="-111.7682"
+               y="89.084778"
+               id="sfg-text"
+               transform="rotate(-27.773136,-119.52073,-171.90056)">
+               <tspan
+                 x="-111.7682"
+                 y="89.084778">Superior Frontal Gyrus</tspan>
+            </text>
+        </svg>
+    </div>
+    <script>
+        // Wait for background image to load
+        window.onload = function() {
+            document.getElementById('ready-indicator').style.visibility = 'visible';
+        };
+    </script>
+</body>
+</html>

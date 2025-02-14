@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="361.24442mm"
+   height="206.02223mm"
+   viewBox="0 0 361.24442 206.02223"
+   version="1.1"
+   id="svg2237"
+   sodipodi:docname="brain-with-png.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview2239"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="0.75098906"
+     inkscape:cx="418.11528"
+     inkscape:cy="449.40735"
+     inkscape:window-width="1920"
+     inkscape:window-height="1049"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2234">
+    <rect
+       x="-17.842478"
+       y="327.6788"
+       width="26.288005"
+       height="97.358751"
+       id="rect34367" />
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter5025"
+       x="-0.0160872"
+       y="-0.13725017"
+       width="1.0322188"
+       height="1.2744853">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.33488334"
+         id="feGaussianBlur5027" />
+    </filter>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(43.057617,-1.2691622)">
+    <path
+       style="opacity:0;mix-blend-mode:normal;fill:#ff0000;fill-rule:evenodd;stroke:#f80000;stroke-opacity:1;filter:url(#filter5025)"
+       id="sfg"
+       sodipodi:type="arc"
+       sodipodi:cx="25.645584"
+       sodipodi:cy="52.750046"
+       sodipodi:rx="40.408779"
+       sodipodi:ry="4.7500296"
+       sodipodi:start="0"
+       sodipodi:end="6.1989383"
+       sodipodi:open="true"
+       sodipodi:arc-type="arc"
+       d="m 66.054363,52.750046 a 40.408779,4.7500296 0 0 1 -39.557762,4.748976 40.408779,4.7500296 0 0 1 -41.223951,-4.548947 40.408779,4.7500296 0 0 1 37.821393,-4.94058 40.408779,4.7500296 0 0 1 42.817003,4.340848"
+       transform="matrix(0.89586421,-0.44432793,0.25006296,0.96822958,0,-2.1166667)" />
+    <text
+       xml:space="preserve"
+       style="opacity:0;mix-blend-mode:normal;fill:#000000;fill-rule:evenodd;stroke:none;font-size:4.9389px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;white-space:pre;inline-size:65.6366;stroke-width:0.264583"
+       x="-111.7682"
+       y="89.084778"
+       id="sfg-text"
+       transform="rotate(-27.773136,-122.73136,-172.6943)"><tspan
+         x="-111.7682"
+         y="89.084778"
+         id="tspan45611">Superior Frontal Gyrus</tspan></text>
+    <image
+       width="284.353"
+       height="183.59213"
+       preserveAspectRatio="none"
+       xlink:href="../data/images/brain/brain-en-49bacc-1024-edited.png"
+       id="image45355"
+       x="-30.656105"
+       y="13.59573" />
+    <rect
+       style="opacity:1;mix-blend-mode:normal;fill:#ffffff;stroke:none;stroke-width:1.01824;stroke-opacity:1"
+       id="rect44136"
+       width="41.025291"
+       height="12.992156"
+       x="-30.656105"
+       y="13.59573" />
+  </g>
+</svg>
