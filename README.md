@@ -101,19 +101,6 @@ The test suite covers:
 - Error handling for invalid YAML
 - Relationship validation
 
-## Project Structure
-
-```
-course-creation-tools/
-├── knowledge_graph_visualizer.py   # Main knowledge graph tool
-├── test_knowledge_graph.py         # Test suite
-├── requirements.txt                # Python dependencies
-├── brain_animation/                # Animation tools
-│   ├── capture_animation.py        # Video capture script
-│   └── animator/                   # Django app for animations
-└── output/                         # Generated visualizations
-```
-
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
