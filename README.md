@@ -24,7 +24,8 @@ The graph [habits-knowledge-graph.yaml](data/yaml/habits-knowledge-graph.yaml) w
 from the paper 'A new look at Habits and the Habit Goal' (available thorug ReseachGate) and the [schema](knowledge_graph_schema.json) using the following prompt:
 
 ```plain text
-I'd like you to summarise the uploaded pdf file and convert it to a yaml file using the knowledge graph schema that I uploaded.
+I'd like you to summarise the uploaded pdf file and convert it
+to a yaml file using the knowledge graph schema that I uploaded.
 ```
 
 Conversion produced this image:
