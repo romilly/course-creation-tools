@@ -1,0 +1,73 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Mind Map Schema",
+  "description": "Schema for Freeplane-compatible mind map YAML format",
+  
+  "definitions": {
+    "node": {
+      "type": "object",
+      "required": ["title"],
+      "properties": {
+        "title": {
+          "type": "string",
+          "description": "The display text for the node"
+        },
+        "note": {
+          "type": "string",
+          "description": "Rich text note attached to the node"
+        },
+        "children": {
+          "type": "object",
+          "description": "Child nodes of this node",
+          "patternProperties": {
+            "^[a-zA-Z0-9_]+$": {
+              "$ref": "#/definitions/node"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+
+  "type": "object",
+  "required": ["root"],
+  "properties": {
+    "root": {
+      "allOf": [
+        { "$ref": "#/definitions/node" },
+        { 
+          "required": ["children"],
+          "description": "The root node must have at least one child"
+        }
+      ]
+    }
+  },
+  "additionalProperties": false,
+
+  "examples": [
+    {
+      "root": {
+        "title": "Example Mind Map",
+        "note": "This is the root node",
+        "children": {
+          "topic1": {
+            "title": "First Topic",
+            "note": "Note for first topic",
+            "children": {
+              "subtopic1": {
+                "title": "Subtopic 1",
+                "note": "Note for subtopic"
+              }
+            }
+          },
+          "topic2": {
+            "title": "Second Topic",
+            "note": "Note for second topic"
+          }
+        }
+      }
+    }
+  ]
+}

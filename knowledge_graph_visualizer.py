@@ -14,8 +14,15 @@ def create_knowledge_graph(yaml_file, output_dir='output'):
     dot.attr(rankdir='LR')  # Left to right layout
     
     # Set graph attributes for better visualization
-    dot.attr('node', shape='circle', style='filled', fillcolor='lightblue')
-    dot.attr('edge', fontsize='10')
+    dot.attr('node', 
+            shape='rectangle',
+            style='filled',
+            fillcolor='lightblue',
+            fontname='Arial',
+            fontsize='16')
+    dot.attr('edge',
+            fontname='Arial',
+            fontsize='14')
 
     # Add nodes (entities)
     for entity in data['entities']:
