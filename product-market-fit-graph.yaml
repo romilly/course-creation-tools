@@ -1,0 +1,93 @@
+entities:
+  - id: product_market_fit
+    name: "Product/Market Fit"
+    description: "A state where a company is growing and sustainable, with customers that want to pay and want to stay"
+
+  - id: personal_fit
+    name: "Personal Fit"
+    description: "The combination of passion and personal edge that makes someone ideal to build a specific company"
+
+  - id: market_fit
+    name: "Market Fit"
+    description: "A working theory of why customers will buy, validated through market analysis and customer research"
+
+  - id: customer_fit
+    name: "Customer Fit"
+    description: "Finding and validating ideal customers through direct interviews and feedback before building"
+
+  - id: slc
+    name: "Simple, Lovable, Complete (SLC)"
+    description: "An alternative to MVP focusing on shipping a simple but complete product that customers love"
+
+  - id: marketing_sales
+    name: "Marketing and Sales Focus"
+    description: "Prioritizing customer acquisition and sales over product development and features"
+
+  - id: retention
+    name: "Retention-driven Development"
+    description: "Focusing product development on keeping existing customers satisfied and successful"
+
+  - id: prioritization
+    name: "Systematic Prioritization"
+    description: "Ruthless and methodical prioritization of work using frameworks like Rocks, Pebbles, Sand"
+
+  - id: psychology
+    name: "Psychology Management"
+    description: "Managing personal psychology through constant rejection and challenges of startup journey"
+
+  - id: icp
+    name: "Ideal Customer Profile"
+    description: "A specific, well-defined target customer segment that is perfect for your product"
+
+  - id: leverage
+    name: "Personal Leverage"
+    description: "Unique combination of talents and experiences that give founder competitive advantage"
+
+relationships:
+  - source: personal_fit
+    target: leverage
+    name: "requires"
+
+  - source: market_fit
+    target: customer_fit
+    name: "validates through"
+
+  - source: customer_fit
+    target: icp
+    name: "defines"
+
+  - source: slc
+    target: product_market_fit
+    name: "leads to"
+
+  - source: marketing_sales
+    target: product_market_fit
+    name: "drives"
+
+  - source: retention
+    target: product_market_fit
+    name: "sustains"
+
+  - source: prioritization
+    target: product_market_fit
+    name: "enables"
+
+  - source: psychology
+    target: product_market_fit
+    name: "supports"
+
+  - source: personal_fit
+    target: market_fit
+    name: "informs"
+
+  - source: customer_fit
+    target: slc
+    name: "guides"
+
+  - source: retention
+    target: marketing_sales
+    name: "reinforces through referrals"
+
+  - source: icp
+    target: marketing_sales
+    name: "focuses"
