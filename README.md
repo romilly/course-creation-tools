@@ -18,7 +18,22 @@ pip install -r requirements.txt
 
 #### Usage
 
-1. Create a YAML file describing your knowledge graph:
+1. Create a YAML file describing your knowledge graph. 
+You can do that manually, or you can ask an AI agent to do it for you.
+The graph [habits-knowledge-graph.yaml](data/yaml/habits-knowledge-graph.yaml) was created by Claude
+from the paper 'A new look at Habits and the Habit Goal' (available thorug ReseachGate) and the [schema](knowledge_graph_schema.json) using the following prompt:
+
+```plain text
+I'd like you to summarise the uploaded pdf file and convert it to a yaml file using the knowledge graph schema that I uploaded.
+```
+
+Conversion produced this image:
+
+![Habits](data/images/habits.png)
+
+If you display the generated html in a browser, you should see more detail when you hover over one of the concept boxes.
+
+Here's a simpler example:
 
 ```yaml
 entities:
@@ -44,6 +59,7 @@ relationships:
 This will create:
 - `output/knowledge_graph.svg`: The SVG visualization
 - `output/knowledge_graph_inline.html`: A self-contained HTML file with embedded SVG (perfect for blog posts)
+
 
 #### Features
 - Interactive graph visualization using Graphviz

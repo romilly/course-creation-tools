@@ -1,0 +1,69 @@
+entities:
+  - id: "habit"
+    name: "Habit"
+    description: "A learned disposition to repeat past responses that are triggered by features of the context that have covaried frequently with past performance, including performance locations, preceding actions, and particular people"
+
+  - id: "goal"
+    name: "Goal" 
+    description: "Mental representation of desired outcomes that can guide behavior but does not directly mediate habitual responses"
+
+  - id: "context_cue"
+    name: "Context Cue"
+    description: "Features of the performance environment that can trigger habitual responses, including physical locations, preceding actions, and other people"
+
+  - id: "direct_cuing"
+    name: "Direct Cuing"
+    description: "Process where habits are represented as direct context-response associations developed from repeated coactivation"
+
+  - id: "motivated_cuing"
+    name: "Motivated Cuing"
+    description: "Process where reward value of response outcomes becomes conditioned onto context cues that historically accompanied rewards"
+
+  - id: "self_control"
+    name: "Self Control"
+    description: "Effortful inhibition of habitual responses that requires regulatory resources"
+
+  - id: "habit_change"
+    name: "Habit Change"
+    description: "Interventions and processes that can modify or break existing habits"
+
+relationships:
+  - source: "context_cue"
+    target: "habit"
+    name: "triggers"
+
+  - source: "habit"
+    target: "goal"
+    name: "can_serve"
+
+  - source: "goal"
+    target: "habit"
+    name: "can_form"
+
+  - source: "direct_cuing"
+    target: "habit"
+    name: "activates"
+
+  - source: "motivated_cuing"
+    target: "habit" 
+    name: "activates"
+
+  - source: "self_control"
+    target: "habit"
+    name: "inhibits"
+
+  - source: "habit_change"
+    target: "habit"
+    name: "modifies"
+
+  - source: "goal"
+    target: "self_control"
+    name: "guides"
+
+  - source: "context_cue"
+    target: "motivated_cuing"
+    name: "enables"
+
+  - source: "context_cue"
+    target: "direct_cuing"
+    name: "enables"
